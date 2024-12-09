@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Gallery from './Gallery';
+import Footer from './Footer';
 
 function App() {
+  const s={fontSize:'60px' }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+        <div 
+          style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: 'lightcyan',
+          borderRadius: '12px',
+          width: '100%',
+          height: '180px',
+          boxShadow: '0px 8px 15px rgba(0, 0, 0, 0.8)', }}
+        
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <h1 style={s} ><span style={{color:'red',transform:'scale(1.1)'}}>I</span>mage Gallery</h1></div>
+
+      <Gallery/>
+      <Footer/>
+
+    </>
   );
 }
 
